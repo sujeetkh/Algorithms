@@ -75,6 +75,7 @@ public class FrequencyBasedDFS {
 
 			System.out.println(getCount(u, l, r, vertices));
 		}
+		in.close();
 	}
 
 }
