@@ -1,8 +1,8 @@
 package in.iisc.csa.sujeet.algorithms.greedy;
 
 public class Activity {
-	int startTime;
-	int finishTime;
+	public int startTime;
+	public int finishTime;
 
 	public Activity(int startTime, int finishTime) {
 		super();

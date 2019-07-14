@@ -3,9 +3,9 @@ package in.iisc.csa.sujeet.algorithms.linkedlist;
 public class SList {
 	Node head;
 
-	static class Node {
-		int value;
-		Node next;
+	public static class Node {
+		public int value;
+		public Node next;
 
 		public Node(int value) {
 			this.value = value;
@@ -30,6 +30,18 @@ public class SList {
 			newNode.next = head;
 			head = newNode;
 		}
+	}
+
+	public int length() {
+		if (head == null)
+			return 0;
+		Node tmp = head;
+		int length = 0;
+		while (tmp != null) {
+			tmp = tmp.next;
+			length++;
+		}
+		return length;
 	}
 
 	public void insertAtBack(int value) {
